@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omkar Ghuge | VR Developer & Data Analyst</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <style>
+        :root {
+            --primary-color: #00d2ff; /* Cyber Blue */
+            --secondary-color: #3a7bd5;
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-dim: #94a3b8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Header Section */
+        header {
+            text-align: center;
+            padding: 60px 0;
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        h1 {
+            font-size: 3rem;
+            letter-spacing: -1px;
+            margin-bottom: 10px;
+            background: linear-gradient(to right, #00d2ff, #9cedff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-dim);
+            font-weight: 300;
+        }
+
+        /* Skills Tags */
+        .skills-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .skill-tag {
+            background: rgba(0, 210, 255, 0.1);
+            border: 1px solid var(--primary-color);
+            color: var(--primary-color);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Section Styling */
+        section {
+            margin: 40px 0;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            border-left: 4px solid var(--primary-color);
+            padding-left: 15px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+            border: 1px solid transparent;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-color);
+        }
+
+        .card h3 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        /* Contact Section */
+        .contact-bar {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .contact-bar a {
+            color: var(--text-main);
+            text-decoration: none;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        .contact-bar a:hover {
+            color: var(--primary-color);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-dim);
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>OMKAR GHUGE</h1>
+        <p class="subtitle">VR Developer | Unreal Engine Specialist | Data Visualization</p>
+        
+        <div class="skills-container">
+            <span class="skill-tag">Unreal Engine 5</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Data Visualization</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">Virtual Reality</span>
+        </div>
+
+        <div class="contact-bar">
+            <a href="mailto:your.email@example.com" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/yourusername" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a developer focused on creating immersive digital experiences and making complex data easy to understand. I specialize in building VR environments using Unreal Engine and leveraging Python for insightful data storytelling. I am currently seeking a 1-month internship to contribute to innovative technical projects.</p>
+    </section>
+
+    <section id="expertise">
+        <h2>Core Expertise</h2>
+        <div class="grid">
+            <div class="card">
+                <h3><i class="fas fa-vr-cardboard"></i> VR Development</h3>
+                <p>Developing interactive 3D environments in Unreal Engine. Proficient in Blueprints, world building, and VR optimization.</p>
+            </div>
+            <div class="card">
+                <h3><i class="fas fa-chart-line"></i> Data Visualization</h3>
+                <p>Transforming raw data into visual stories using Python libraries (Pandas, Matplotlib, Seaborn) to drive decision making.</p>
+            </div>
+            <div class="card">
+                <h3><i class="fab fa-python"></i> Automation & Scripting</h3>
+                <p>Writing clean, efficient Python code to automate workflows and handle complex data processing tasks.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Project Highlights</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>VR Architectural Walkthrough</h3>
+                <p>Built a high-fidelity immersive tour in Unreal Engine 5 focusing on realistic lighting and user interaction.</p>
+            </div>
+            <div class="card">
+                <h3>Data Analysis Dashboard</h3>
+                <p>Developed a Python-based visualization tool that identifies trends in complex datasets with interactive charts.</p>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; Omkar Ghuge | Since 2005</p>
+</footer>
+
+</body>
+</html>
